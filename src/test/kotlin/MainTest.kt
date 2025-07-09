@@ -33,11 +33,21 @@ class MainTest {
 
     @Test
     fun comissionTestMir(){
+        val typeCard = "Мир"
         val amount = 1_000
 
-        val resultMir = ru.netology.comission(amount = amount)
+        val resultMir = ru.netology.comission(typeCard, amount = amount)
 
-        assertEquals(0, resultMir)
+        assertEquals(35, resultMir)
+    }
+
+    @Test
+    fun comissionTestVKPay(){
+        val amount = 1_000
+
+        val resultVKPay = ru.netology.comission(amount = amount)
+
+        assertEquals(0, resultVKPay)
     }
 
     @Test
