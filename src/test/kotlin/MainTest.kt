@@ -37,7 +37,7 @@ class MainTest {
 
         val resultMir = ru.netology.comission(amount = amount)
 
-        assertEquals(35, resultMir)
+        assertEquals(0, resultMir)
     }
 
     @Test
@@ -48,7 +48,6 @@ class MainTest {
         val resultErrorDailyLimit = ru.netology.comission(amount = amount)
         val resultErrorMonthlyLimit = ru.netology.comission(amount = amount - 1, previousAmount = previousAmount)
 
-//        assertEquals(-1, resultErrorDailyLimit)
         assertEquals(-2, resultErrorMonthlyLimit)
     }
 

@@ -11,7 +11,7 @@ fun main() {
     println(comission("Мир", 50_000, 100_000))
     println(comission("VKPay", 50_000, 100_000))
     println(comission(amount = 150_001, previousAmount = 100_000))
-    println(comission("Проверка", 0))
+    println1(comission("Проверка", 0))
 }
 
 fun comission(typeCard: String = "Мир", amount: Int, previousAmount: Int = 0): Int {
